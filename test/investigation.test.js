@@ -71,7 +71,7 @@ describe('testing-server-routes', () => {
         const old_length_investigations = res_investigations.body.length
 
         const investigationObj = {
-            name: 'Montgomery',
+            name: 'enquête de test',
         }
         const res = await request(app).post('/api/investigations').send(investigationObj)
         res_investigations = await request(app).get('/api/investigations')

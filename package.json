@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
-    "nodemon": "node_modules/.bin/nodemon",
+    "start:watch": "nodemon src/server.js",
     "test": "jest",
+    "posttest": "npm run lint",
     "test:ci": "echo 'Bonjour'",
     "pretest:ci": "npm run lint",
     "lint": "eslint .",

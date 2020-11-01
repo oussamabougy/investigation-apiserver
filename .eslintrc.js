@@ -13,6 +13,9 @@ module.exports = {
         ecmaVersion: 12,
     },
     rules: {
-        'object-curly-spacing': [2, 'always']
+        'object-curly-spacing': [2, 'always'],
+        'space-before-function-paren': ['error', {
+            asyncArrow: 'always'
+        }],
     },
 }
